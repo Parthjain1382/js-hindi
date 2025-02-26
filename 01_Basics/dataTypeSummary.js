@@ -1,3 +1,12 @@
+
+let name = "Pranay"  
+name2 = 'anay'
+
+//Understanding the window Object
+// window is a global object in browsers.
+// It represents the browser window/tab and contains properties/methods for interacting with it.
+// Any implicitly declared global variable becomes a property of window.
+
 //Data Types
 
 /**primitive data types 7 (call by value )
@@ -43,3 +52,18 @@ const addNumber = function name(params) {
 
 console.log(typeof addNumber) //function
 console.log(typeof bigNumber)
+
+
+// Stack and heap memory 
+// stack memory is used for primitive data types
+// heap memory is used for non-primitive data types 
+
+
+let personDetails = {
+  name: "pranay",
+  age: 12
+}
+
+let personDetails2 = personDetails   //here both are refering to same object in the heap memory 
+personDetails2.name = "John"   //changing the name of personDetails2 will also change the name of personDetails
+
