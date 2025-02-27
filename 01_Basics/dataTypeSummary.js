@@ -67,3 +67,16 @@ let personDetails = {
 let personDetails2 = personDetails   //here both are refering to same object in the heap memory 
 personDetails2.name = "John"   //changing the name of personDetails2 will also change the name of personDetails
 
+
+
+let personDetails3 = {
+  name: "pranay",
+  age: 12
+}
+
+let personDetail4 = personDetails3
+
+personDetail4.age = 24
+
+console.log(personDetails3)
+console.log(personDetail4)  
